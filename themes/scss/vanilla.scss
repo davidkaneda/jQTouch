@@ -1,9 +1,32 @@
-$base-color: #eee;
+$base-color: #ddd;
 $highlight-color: #f6f6f6;
 $base-button-gradient: flat;
 $include-highlights: false;
 $include-back-arrow: false;
 // $default-border-radius: 0;
 $theme: vanilla;
+$base-font-family: 'Avenir Next', Avenir, sans-serif;
 
 @import 'include/core';
+
+
+h1 {
+  font-weight: 400;
+}
+
+#jqt {
+  font-weight: 400;
+  .toolbar {
+    height: 64px;
+    border-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba($base-color, .8);
+
+    & + div, & + ul {
+      padding-top: 64px;
+    }
+  }
+}

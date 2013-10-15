@@ -185,6 +185,33 @@
     }
 }
 
+/* Cover Up */
+
+#jqt .cover.in {
+    -webkit-animation-name: slideUpIn;
+}
+#jqt .cover.out {
+    -webkit-animation-name: noAnim;
+}
+
+@-webkit-keyframes slideUpIn {
+    20% {
+        -webkit-transform: translateY(80%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes noAnim {
+    0% {
+       opacity: 1;
+    } 
+    100% {
+       opacity: 1;
+    }
+}
+
 
 
 /* Slide Down */
