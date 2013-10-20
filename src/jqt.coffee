@@ -46,6 +46,12 @@ class $.jQT
   ,
     name: "slideleft"
     selector: ".slideleft, .slide, #jqt > * > ul li a"
+  ,
+    name: "coverup"
+    selector: ".coverup"
+  ,
+    name: "coverdown"
+    selector: ".coverdown"
   ]
   orientation: 'portrait'
   tapHandlers: []

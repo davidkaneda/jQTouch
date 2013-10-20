@@ -132,11 +132,15 @@
                 params.$el.removeClass('active');
 
                 var $target = params.$el.closest('.menusheet');
-                $target.menusheet('hide', function() {
-                    if (!params.$el.is('.dismiss')) {
-                      params.$el.trigger('tap');
-                    }
-                });
+
+                $target.menusheet('hide');
+
+                if (!params.$el.hasClass('dismiss')) {
+                    setTimeout(function(){
+                        params.$el.trigger('tap');
+                    }, 0);
+                }
+
                 return false;
             }
         });
