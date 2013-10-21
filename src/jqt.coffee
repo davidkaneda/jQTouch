@@ -202,6 +202,9 @@ class $.jQT
         window.history.go -1
       from = customHistory[0]
       to = customHistory[1]
+
+      return unless from? and to?
+      
       if doNavigation(from.page, to.page, from.animation, true)
         @
       else
